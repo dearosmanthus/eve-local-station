@@ -1,0 +1,358 @@
+{
+  "cases": [
+    {
+      "id": "rifter-empty-all5",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-empty-all0",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "custom",
+          "skills": {},
+          "modules": [],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-autocannon",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-autocannon-overload",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "overloaded",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-autocannon-offline",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "offline",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-stacked-gyros",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 185
+            },
+            {
+              "type_id": 519,
+              "slot_type": "low",
+              "index": 0,
+              "state": "online",
+              "charge_type_id": null
+            },
+            {
+              "type_id": 519,
+              "slot_type": "low",
+              "index": 1,
+              "state": "online",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-afterburner",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 438,
+              "slot_type": "medium",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-microwarpdrive",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 440,
+              "slot_type": "medium",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "rifter-damage-control",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2048,
+              "slot_type": "low",
+              "index": 0,
+              "state": "online",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "caracal-heavy-missile",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 621,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2410,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 209
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "vexor-five-hobgoblins",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 626,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [
+            {
+              "type_id": 2456,
+              "quantity": 5,
+              "state": "active"
+            }
+          ],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    },
+    {
+      "id": "vexor-hobgoblins-in-bay",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 626,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [
+            {
+              "type_id": 2456,
+              "quantity": 5,
+              "state": "online"
+            }
+          ],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      }
+    }
+  ]
+}

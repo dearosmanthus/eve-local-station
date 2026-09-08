@@ -1,0 +1,41 @@
+name: Offline Android preview
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.35.7'
+          channel: stable
+          cache: true
+      - uses: dtolnay/rust-toolchain@1.98.1
+        with:
+          targets: aarch64-linux-android
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;35.0.0" "build-tools;36.0.0" "ndk;27.0.12077973" "cmake;3.22.1"
+      - run: cargo install cargo-ndk --version 4.1.2 --locked
+      - run: flutter config --no-analytics
+      - run: python -m unittest discover -s tools/tests -v
+      - run: cargo test --manifest-path native/Cargo.toml --locked
+      - run: cargo build --manifest-path native/Cargo.toml --locked --bin eve_local_core --lib
+      - run: python tools/benchmark/capture_engine.py --reference data/benchmarks/pyfa-core-3494416.json --engine-executable native/target/debug/eve_local_core --data app/assets/engine --output work/engine-ci.json
+      - run: python tools/benchmark/compare_pyfa.py --expected data/benchmarks/pyfa-core-3494416.json --actual work/engine-ci.json --report work/parity-ci.json
+      - run: chmod +x app/android/gradlew
+      - run: python tools/build_android.py
+        env:
+          ELS_NATIVE_LIBRARY: ${{ github.workspace }}/native/target/debug/libeve_local_core.so
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eve-local-station-arm64-preview
+          path: app/build/app/outputs/flutter-apk/app-release.apk

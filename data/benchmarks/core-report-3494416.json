@@ -1,0 +1,1342 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "sde:3494416;fsd:sde-3494416",
+  "synthetic": false,
+  "passed": true,
+  "referenceProducer": {
+    "name": "pyfa",
+    "version": "EOS-headless",
+    "revision": "8b04f3b271e614b3e103853b44a7851a63d79d0e",
+    "sourceArchiveSha256": "dae55c6fcb25ec2f5fc9ddb651ee81815c07b10bb20892a7955657142d3d8409",
+    "adapter": "Independent official JSONL to pyfa SQLite; unmodified EOS calculation source; no GUI"
+  },
+  "actualProducer": {
+    "name": "eve-fit-os",
+    "version": "git-5772f9d6238a",
+    "revision": "5772f9d6238a019b71f0fb235fbeeaf1338694f5",
+    "executableSha256": "10ed10b23fadd79d576b35a3c10b9be55ae6889fd44a044bcbbdaea3d2721ebe"
+  },
+  "notice": "Only the listed inputs and metrics were compared",
+  "checks": [
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "align_time",
+      "expected": 5.238040463037548,
+      "actual": 5.238040463037557,
+      "unit": "s",
+      "delta": 9.769962616701378e-15,
+      "allowedDelta": 5.238040463037548e-06,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "alpha",
+      "expected": 204.875,
+      "actual": 204.87500000000003,
+      "unit": "HP",
+      "delta": 2.842170943040401e-14,
+      "allowedDelta": 0.00020487499999999998,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "cpu_output",
+      "expected": 537.5,
+      "actual": 537.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0005375,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "cpu_used",
+      "expected": 41.25,
+      "actual": 41.25,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 4.125e-05,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "dps",
+      "expected": 33.06301944646171,
+      "actual": 33.063019446464686,
+      "unit": "HP/s",
+      "delta": 2.9771740628348198e-12,
+      "allowedDelta": 3.3063019446461705e-05,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "dps_with_reload",
+      "expected": 31.78081129294966,
+      "actual": 31.780811292948272,
+      "unit": "HP/s",
+      "delta": 1.3891110484109959e-12,
+      "allowedDelta": 3.178081129294966e-05,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "ehp",
+      "expected": 7765.197003488305,
+      "actual": 7765.197003488305,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 0.007765197003488305,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "powergrid_output",
+      "expected": 787.5,
+      "actual": 787.5,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 0.0007875,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "powergrid_used",
+      "expected": 94.5,
+      "actual": 94.5,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 9.449999999999999e-05,
+      "passed": true
+    },
+    {
+      "case": "caracal-heavy-missile",
+      "metric": "speed",
+      "expected": 287.5,
+      "actual": 287.5,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.0002875,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "align_time",
+      "expected": 4.6922182499697165,
+      "actual": 4.6922182499697245,
+      "unit": "s",
+      "delta": 7.993605777301127e-15,
+      "allowedDelta": 4.6922182499697165e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "alpha",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "cpu_used",
+      "expected": 15.0,
+      "actual": 15.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 1.4999999999999999e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "dps",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "dps_with_reload",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "powergrid_used",
+      "expected": 11.0,
+      "actual": 11.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1.1e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-afterburner",
+      "metric": "speed",
+      "expected": 1193.2524329929802,
+      "actual": 1193.2524329904443,
+      "unit": "m/s",
+      "delta": 2.535898602218367e-09,
+      "allowedDelta": 0.0011932524329929801,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "align_time",
+      "expected": 3.195020339960234,
+      "actual": 3.195020339960241,
+      "unit": "s",
+      "delta": 6.661338147750939e-15,
+      "allowedDelta": 3.195020339960234e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "alpha",
+      "expected": 65.748375,
+      "actual": 65.748375,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 6.574837499999999e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "cpu_used",
+      "expected": 6.75,
+      "actual": 6.75,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 6.75e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "dps",
+      "expected": 38.962,
+      "actual": 38.96199999999976,
+      "unit": "HP/s",
+      "delta": 2.4158453015843406e-13,
+      "allowedDelta": 3.8962000000000004e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "dps_with_reload",
+      "expected": 37.128494117647065,
+      "actual": 37.12849411764512,
+      "unit": "HP/s",
+      "delta": 1.9468870959826745e-12,
+      "allowedDelta": 3.712849411764706e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "powergrid_used",
+      "expected": 3.6,
+      "actual": 3.6,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 3.6e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon",
+      "metric": "speed",
+      "expected": 456.25,
+      "actual": 456.25,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00045625,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "align_time",
+      "expected": 3.195020339960234,
+      "actual": 3.19502033996024,
+      "unit": "s",
+      "delta": 5.773159728050814e-15,
+      "allowedDelta": 3.195020339960234e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "alpha",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "cpu_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "dps",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "dps_with_reload",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "powergrid_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-offline",
+      "metric": "speed",
+      "expected": 456.25,
+      "actual": 456.25,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00045625,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "align_time",
+      "expected": 3.195020339960234,
+      "actual": 3.19502033996024,
+      "unit": "s",
+      "delta": 5.773159728050814e-15,
+      "allowedDelta": 3.195020339960234e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "alpha",
+      "expected": 75.61063125,
+      "actual": 75.61063125,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 7.561063124999999e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "cpu_used",
+      "expected": 6.75,
+      "actual": 6.75,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 6.75e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "dps",
+      "expected": 44.80629999999999,
+      "actual": 44.80629999999972,
+      "unit": "HP/s",
+      "delta": 2.7000623958883807e-13,
+      "allowedDelta": 4.480629999999999e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "dps_with_reload",
+      "expected": 42.69776823529411,
+      "actual": 42.69776823529188,
+      "unit": "HP/s",
+      "delta": 2.2311041902867146e-12,
+      "allowedDelta": 4.269776823529411e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "powergrid_used",
+      "expected": 3.6,
+      "actual": 3.6,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 3.6e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-autocannon-overload",
+      "metric": "speed",
+      "expected": 456.25,
+      "actual": 456.25,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00045625,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "align_time",
+      "expected": 3.195020339960234,
+      "actual": 3.195020339960241,
+      "unit": "s",
+      "delta": 6.661338147750939e-15,
+      "allowedDelta": 3.195020339960234e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "alpha",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "cpu_used",
+      "expected": 30.0,
+      "actual": 30.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 2.9999999999999997e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "dps_with_reload",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "ehp",
+      "expected": 2955.40012196335,
+      "actual": 2955.4001219633506,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.00295540012196335,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "powergrid_used",
+      "expected": 1.0,
+      "actual": 1.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-damage-control",
+      "metric": "speed",
+      "expected": 456.25,
+      "actual": 456.25,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00045625,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "align_time",
+      "expected": 4.733363466607754,
+      "actual": 4.733363466607763,
+      "unit": "s",
+      "delta": 8.881784197001252e-15,
+      "allowedDelta": 4.7333634666077534e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "alpha",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "cpu_output",
+      "expected": 130.0,
+      "actual": 130.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.00013,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "cpu_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "dps_with_reload",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "ehp",
+      "expected": 1809.744381540573,
+      "actual": 1809.744381540573,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 0.0018097443815405729,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "powergrid_output",
+      "expected": 41.0,
+      "actual": 41.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 4.1e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "powergrid_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all0",
+      "metric": "speed",
+      "expected": 365.0,
+      "actual": 365.0,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.000365,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "align_time",
+      "expected": 3.195020339960234,
+      "actual": 3.195020339960241,
+      "unit": "s",
+      "delta": 6.661338147750939e-15,
+      "allowedDelta": 3.195020339960234e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "alpha",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "cpu_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "dps_with_reload",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "powergrid_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-empty-all5",
+      "metric": "speed",
+      "expected": 456.25,
+      "actual": 456.25,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00045625,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "align_time",
+      "expected": 4.6922182499697165,
+      "actual": 4.692218249969726,
+      "unit": "s",
+      "delta": 9.769962616701378e-15,
+      "allowedDelta": 4.6922182499697165e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "alpha",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "cpu_used",
+      "expected": 25.0,
+      "actual": 25.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 2.4999999999999998e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "dps",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "dps_with_reload",
+      "expected": 0.0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "powergrid_used",
+      "expected": 17.0,
+      "actual": 17.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1.7e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-microwarpdrive",
+      "metric": "speed",
+      "expected": 3240.481413529036,
+      "actual": 3240.481413519456,
+      "unit": "m/s",
+      "delta": 9.58016244112514e-09,
+      "allowedDelta": 0.003240481413529036,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "align_time",
+      "expected": 3.195020339960234,
+      "actual": 3.19502033996024,
+      "unit": "s",
+      "delta": 5.773159728050814e-15,
+      "allowedDelta": 3.195020339960234e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "alpha",
+      "expected": 78.60896740594232,
+      "actual": 78.60896740594232,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 7.860896740594232e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "cpu_output",
+      "expected": 162.5,
+      "actual": 162.5,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.0001625,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "cpu_used",
+      "expected": 66.75,
+      "actual": 66.75,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 6.675e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "dps",
+      "expected": 57.27491876990008,
+      "actual": 57.27491876990366,
+      "unit": "HP/s",
+      "delta": 3.574029960873304e-12,
+      "allowedDelta": 5.727491876990008e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "dps_with_reload",
+      "expected": 53.996412270459224,
+      "actual": 53.996412270461285,
+      "unit": "HP/s",
+      "delta": 2.0605739337042905e-12,
+      "allowedDelta": 5.399641227045922e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "ehp",
+      "expected": 2262.180476925716,
+      "actual": 2262.1804769257164,
+      "unit": "HP",
+      "delta": 4.547473508864641e-13,
+      "allowedDelta": 0.002262180476925716,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "powergrid_output",
+      "expected": 51.25,
+      "actual": 51.25,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.125e-05,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "powergrid_used",
+      "expected": 5.6,
+      "actual": 5.6,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 5.6e-06,
+      "passed": true
+    },
+    {
+      "case": "rifter-stacked-gyros",
+      "metric": "speed",
+      "expected": 456.25,
+      "actual": 456.25,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00045625,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "align_time",
+      "expected": 5.8166138803868375,
+      "actual": 5.816613880386849,
+      "unit": "s",
+      "delta": 1.1546319456101628e-14,
+      "allowedDelta": 5.816613880386837e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "alpha",
+      "expected": 593.9999999999999,
+      "actual": 593.9999999999999,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 0.0005939999999999999,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "cpu_output",
+      "expected": 375.0,
+      "actual": 375.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.000375,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "cpu_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "dps",
+      "expected": 148.49999999999997,
+      "actual": 148.49999999998363,
+      "unit": "HP/s",
+      "delta": 1.6342482922482304e-11,
+      "allowedDelta": 0.00014849999999999998,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "dps_with_reload",
+      "expected": 148.49999999999997,
+      "actual": 148.49999999998363,
+      "unit": "HP/s",
+      "delta": 1.6342482922482304e-11,
+      "allowedDelta": 0.00014849999999999998,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "drone_dps",
+      "expected": 148.49999999999997,
+      "actual": 148.49999999998363,
+      "unit": "HP/s",
+      "delta": 1.6342482922482304e-11,
+      "allowedDelta": 0.00014849999999999998,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "ehp",
+      "expected": 9331.598711423725,
+      "actual": 9331.598711423723,
+      "unit": "HP",
+      "delta": 1.8189894035458565e-12,
+      "allowedDelta": 0.009331598711423725,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "powergrid_output",
+      "expected": 875.0,
+      "actual": 875.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 0.0008749999999999999,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "powergrid_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-five-hobgoblins",
+      "metric": "speed",
+      "expected": 243.75,
+      "actual": 243.75,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00024375,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "align_time",
+      "expected": 5.8166138803868375,
+      "actual": 5.816613880386849,
+      "unit": "s",
+      "delta": 1.1546319456101628e-14,
+      "allowedDelta": 5.816613880386837e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "alpha",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "cpu_output",
+      "expected": 375.0,
+      "actual": 375.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 0.000375,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "cpu_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "tf",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "dps_with_reload",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "drone_dps",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "HP/s",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "ehp",
+      "expected": 9331.598711423725,
+      "actual": 9331.598711423723,
+      "unit": "HP",
+      "delta": 1.8189894035458565e-12,
+      "allowedDelta": 0.009331598711423725,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "powergrid_output",
+      "expected": 875.0,
+      "actual": 875.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 0.0008749999999999999,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "powergrid_used",
+      "expected": 0,
+      "actual": 0.0,
+      "unit": "MW",
+      "delta": 0.0,
+      "allowedDelta": 1e-06,
+      "passed": true
+    },
+    {
+      "case": "vexor-hobgoblins-in-bay",
+      "metric": "speed",
+      "expected": 243.75,
+      "actual": 243.75,
+      "unit": "m/s",
+      "delta": 0.0,
+      "allowedDelta": 0.00024375,
+      "passed": true
+    }
+  ]
+}

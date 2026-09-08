@@ -1,0 +1,20 @@
+use super::item::Attribute;
+use super::{Item, Ship};
+use crate::provider::{FitProvider, InfoProvider};
+
+mod chargeable_armor_repairer;
+mod reactive_armor_hardener;
+
+impl Item {
+    pub fn add_attribute(&mut self, attribute_id: i32, base_value: f64, value: f64) {
+        let mut attribute = Attribute::new_base(base_value);
+        attribute.value = Some(value);
+        self.attributes.insert(attribute_id, attribute);
+    }
+}
+
+/// Attributes don't contain all information displayed, so we calculate some fake attributes with those values.
+pub(super) fn pass(fit: &impl FitProvider, info: &impl InfoProvider, ship: &mut Ship) {
+    chargeable_armor_repairer::attribute_chargeable_armor_repairer(fit, ship);
+    reactive_armor_hardener::attribute_reactive_armor_hardener(fit, info, ship);
+}

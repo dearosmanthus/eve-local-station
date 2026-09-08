@@ -1,0 +1,1185 @@
+{
+  "schemaVersion": 1,
+  "gameServer": "Tranquility",
+  "dataVersion": "sde:3494416;fsd:sde-3494416",
+  "synthetic": false,
+  "producer": {
+    "name": "pyfa",
+    "version": "EOS-headless",
+    "revision": "8b04f3b271e614b3e103853b44a7851a63d79d0e",
+    "sourceArchiveSha256": "dae55c6fcb25ec2f5fc9ddb651ee81815c07b10bb20892a7955657142d3d8409",
+    "adapter": "Independent official JSONL to pyfa SQLite; unmodified EOS calculation source; no GUI"
+  },
+  "cases": [
+    {
+      "id": "rifter-empty-all5",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 3.195020339960234,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-empty-all0",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "custom",
+          "skills": {},
+          "modules": [],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 130.0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 41.0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 365.0,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 1809.744381540573,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 4.733363466607754,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-autocannon",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 6.75,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 3.6,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 3.195020339960234,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 38.962,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 65.748375,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 37.128494117647065,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-autocannon-overload",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "overloaded",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 6.75,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 3.6,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 3.195020339960234,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 44.80629999999999,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 75.61063125,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 42.69776823529411,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-autocannon-offline",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "offline",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 3.195020339960234,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-stacked-gyros",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 185
+            },
+            {
+              "type_id": 519,
+              "slot_type": "low",
+              "index": 0,
+              "state": "online",
+              "charge_type_id": null
+            },
+            {
+              "type_id": 519,
+              "slot_type": "low",
+              "index": 1,
+              "state": "online",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 66.75,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 5.6,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 3.195020339960234,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 57.27491876990008,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 78.60896740594232,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 53.996412270459224,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-afterburner",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 438,
+              "slot_type": "medium",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 1193.2524329929802,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 15.0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 11.0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 4.6922182499697165,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-microwarpdrive",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 440,
+              "slot_type": "medium",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 3240.481413529036,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 25.0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 17.0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2262.180476925716,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 4.6922182499697165,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "rifter-damage-control",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2048,
+              "slot_type": "low",
+              "index": 0,
+              "state": "online",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 30.0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 1.0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 2955.40012196335,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 3.195020339960234,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "caracal-heavy-missile",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 621,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2410,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 209
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 537.5,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 787.5,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 287.5,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 41.25,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 94.5,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 7765.197003488305,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 5.238040463037548,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 33.06301944646171,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 204.875,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 31.78081129294966,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "vexor-five-hobgoblins",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 626,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [
+            {
+              "type_id": 2456,
+              "quantity": 5,
+              "state": "active"
+            }
+          ],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 375.0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 875.0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 243.75,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 9331.598711423725,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 5.8166138803868375,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 148.49999999999997,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 148.49999999999997,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 593.9999999999999,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 148.49999999999997,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    },
+    {
+      "id": "vexor-hobgoblins-in-bay",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 626,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [
+            {
+              "type_id": 2456,
+              "quantity": 5,
+              "state": "online"
+            }
+          ],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 375.0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_output": {
+          "value": 875.0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "speed": {
+          "value": 243.75,
+          "unit": "m/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "cpu_used": {
+          "value": 0,
+          "unit": "tf",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "powergrid_used": {
+          "value": 0,
+          "unit": "MW",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "ehp": {
+          "value": 9331.598711423725,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "align_time": {
+          "value": 5.8166138803868375,
+          "unit": "s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "drone_dps": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "alpha": {
+          "value": 0,
+          "unit": "HP",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        },
+        "dps_with_reload": {
+          "value": 0,
+          "unit": "HP/s",
+          "absoluteTolerance": 1e-06,
+          "relativeTolerance": 1e-06
+        }
+      }
+    }
+  ]
+}

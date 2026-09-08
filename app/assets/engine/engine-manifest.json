@@ -1,0 +1,39 @@
+{
+  "files": {
+    "dbuffcollections.pb2": "57c2639004b742b8d2f330238cd07c11f5c550428ea0314fee9ed50501841bb7",
+    "dogmaAttributes.pb2": "49faefeca5e9c5b189c8ccbdae725e04de20ded910af8ff45cf6180d8ebdcf9e",
+    "dogmaEffects.pb2": "d350a0ce32a45ed18e8a3b1c610e14789b7843f932f5b1417760705c308715c2",
+    "typeDogma.pb2": "9902f0657081e0698b9755003e653a5c6d02b007d101ab728873a848f57a2c6c",
+    "types.pb2": "cc53c94664d000e0dced19094a8cfd775406e76fe29151e77d6e2a4c4323d544"
+  },
+  "fsd_build": "sde-3494416",
+  "patch_ids_sha256": "ae713044cef37e32c9b28ef9f2ab20dd4e63e7e185ebc907bc4e50ac391dd544",
+  "pyfa_verified": false,
+  "record_counts": {
+    "dbuffcollections.pb2": 276,
+    "dogmaAttributes.pb2": 2954,
+    "dogmaEffects.pb2": 3481,
+    "typeDogma.pb2": 26863,
+    "types.pb2": 52999
+  },
+  "reference_errors": 0,
+  "schema_version": 1,
+  "sde_build": "3494416",
+  "separate_fsd_download": false,
+  "server": "tranquility",
+  "source": "CCP official JSONL SDE",
+  "source_archive_sha256": "dae55c6fcb25ec2f5fc9ddb651ee81815c07b10bb20892a7955657142d3d8409",
+  "source_record_counts": {
+    "categories": 48,
+    "dbuffCollections": 276,
+    "dogmaAttributes": 2867,
+    "dogmaEffects": 3417,
+    "groups": 1610,
+    "typeDogma": 26828,
+    "types": 52999
+  },
+  "upstream_revision": "5772f9d6238a019b71f0fb235fbeeaf1338694f5",
+  "validation_warnings": [
+    "10 official EffectStopper modifiers remain present; pinned engine intentionally ignores their online restrictions (pass_2.rs)."
+  ]
+}

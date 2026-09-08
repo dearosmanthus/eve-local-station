@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "gameServer": "Tranquility",
+  "dataVersion": "sde:3494416;fsd:sde-3494416",
+  "synthetic": false,
+  "producer": {
+    "name": "eve-fit-os",
+    "version": "git-5772f9d6238a",
+    "revision": "5772f9d6238a019b71f0fb235fbeeaf1338694f5",
+    "executableSha256": "10ed10b23fadd79d576b35a3c10b9be55ae6889fd44a044bcbbdaea3d2721ebe"
+  },
+  "cases": [
+    {
+      "id": "caracal-heavy-missile",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 621,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2410,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 209
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 537.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 787.5,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 287.5,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 41.25,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 94.5,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 7765.197003488305,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 5.238040463037557,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 33.063019446464686,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 204.87500000000003,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 31.780811292948272,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-afterburner",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 438,
+              "slot_type": "medium",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 1193.2524329904443,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 15.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 11.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 4.6922182499697245,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-autocannon",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 6.75,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 3.6,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 3.195020339960241,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 38.96199999999976,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 65.748375,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 37.12849411764512,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-autocannon-offline",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "offline",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 0.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 0.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 3.19502033996024,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-autocannon-overload",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "overloaded",
+              "charge_type_id": 185
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 6.75,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 3.6,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 3.19502033996024,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 44.80629999999972,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 75.61063125,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 42.69776823529188,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-damage-control",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2048,
+              "slot_type": "low",
+              "index": 0,
+              "state": "online",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 30.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 1.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2955.4001219633506,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 3.195020339960241,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-empty-all0",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "custom",
+          "skills": {},
+          "modules": [],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 130.0,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 41.0,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 365.0,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 0.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 0.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 1809.744381540573,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 4.733363466607763,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-empty-all5",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 0.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 0.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 3.195020339960241,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-microwarpdrive",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 440,
+              "slot_type": "medium",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 3240.481413519456,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 25.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 17.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 4.692218249969726,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "rifter-stacked-gyros",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 587,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [
+            {
+              "type_id": 2889,
+              "slot_type": "high",
+              "index": 0,
+              "state": "active",
+              "charge_type_id": 185
+            },
+            {
+              "type_id": 519,
+              "slot_type": "low",
+              "index": 0,
+              "state": "online",
+              "charge_type_id": null
+            },
+            {
+              "type_id": 519,
+              "slot_type": "low",
+              "index": 1,
+              "state": "online",
+              "charge_type_id": null
+            }
+          ],
+          "drones": [],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 162.5,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 51.25,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 456.25,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 66.75,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 5.6,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 2262.1804769257164,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 3.19502033996024,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 57.27491876990366,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 78.60896740594232,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 53.996412270461285,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "vexor-five-hobgoblins",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 626,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [
+            {
+              "type_id": 2456,
+              "quantity": 5,
+              "state": "active"
+            }
+          ],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 375.0,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 875.0,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 243.75,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 0.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 0.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 9331.598711423723,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 5.816613880386849,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 148.49999999998363,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 148.49999999998363,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 593.9999999999999,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 148.49999999998363,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    },
+    {
+      "id": "vexor-hobgoblins-in-bay",
+      "input": {
+        "nativeFit": {
+          "ship_type_id": 626,
+          "skill_mode": "all5",
+          "skills": {},
+          "modules": [],
+          "drones": [
+            {
+              "type_id": 2456,
+              "quantity": 5,
+              "state": "online"
+            }
+          ],
+          "implants": []
+        },
+        "damageProfile": {
+          "em": 0.25,
+          "thermal": 0.25,
+          "kinetic": 0.25,
+          "explosive": 0.25
+        },
+        "boosters": [],
+        "fleetEffects": [],
+        "environment": []
+      },
+      "metrics": {
+        "cpu_output": {
+          "value": 375.0,
+          "unit": "tf"
+        },
+        "powergrid_output": {
+          "value": 875.0,
+          "unit": "MW"
+        },
+        "speed": {
+          "value": 243.75,
+          "unit": "m/s"
+        },
+        "cpu_used": {
+          "value": 0.0,
+          "unit": "tf"
+        },
+        "powergrid_used": {
+          "value": 0.0,
+          "unit": "MW"
+        },
+        "ehp": {
+          "value": 9331.598711423723,
+          "unit": "HP"
+        },
+        "align_time": {
+          "value": 5.816613880386849,
+          "unit": "s"
+        },
+        "dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "drone_dps": {
+          "value": 0.0,
+          "unit": "HP/s"
+        },
+        "alpha": {
+          "value": 0.0,
+          "unit": "HP"
+        },
+        "dps_with_reload": {
+          "value": 0.0,
+          "unit": "HP/s"
+        }
+      },
+      "diagnostics": []
+    }
+  ]
+}

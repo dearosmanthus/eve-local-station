@@ -1,0 +1,8 @@
+# Preserve hashes of bundled data, archived licenses and fixed upstream source.
+* -text
+app/android/gradlew text eol=lf
+*.png binary
+*.jar binary
+*.pb2 binary
+*.apk binary
+*.zip binary

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "core-cohort-measured-and-passed",
+  "notice": "12 real fits and132 measured checks passed in data/benchmarks/core-report-3494416.json. This matrix tracks broader coverage; ranges/capacitor/T3/implants/boosters remain unverified.",
+  "cases": [
+    {"id": "rifter-empty-zero", "ship": "Rifter", "status": "core-metrics-passed", "skillProfile": "all-zero", "coverage": ["base hull attributes"]},
+    {"id": "rifter-empty-all-v", "ship": "Rifter", "status": "core-metrics-passed", "skillProfile": "all-v", "coverage": ["skill modifiers", "CPU", "powergrid"]},
+    {"id": "rifter-turrets", "ship": "Rifter", "status": "DPS-volley-resources-states-stacking-passed-range-unmeasured", "coverage": ["DPS", "volley", "optimal", "falloff", "tracking"]},
+    {"id": "caracal-missiles", "ship": "Caracal", "status": "DPS-volley-resources-reload-passed-range-unmeasured", "coverage": ["missile DPS", "flight range", "launcher cycle"]},
+    {"id": "vexor-drones", "ship": "Vexor", "status": "DPS-volley-active-bay-passed-capacities-unmeasured", "coverage": ["bandwidth", "drone bay", "drone DPS"]},
+    {"id": "armor-stacking", "status": "fit-to-be-selected", "coverage": ["stacking penalties", "resistances", "EHP"]},
+    {"id": "propulsion-capacitor", "status": "AB-MWD-velocity-align-passed-capacitor-unmeasured", "coverage": ["velocity", "align time", "capacitor stability", "capacitor lifetime"]},
+    {"id": "strategic-cruiser-subsystems", "status": "fit-to-be-selected", "coverage": ["dynamic slots", "subsystem families"]},
+    {"id": "overheat-implants-boosters", "status": "fit-to-be-selected", "coverage": ["overheat", "implants", "boosters"]}
+  ]
+}

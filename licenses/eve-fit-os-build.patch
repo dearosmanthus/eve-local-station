@@ -1,0 +1,155 @@
+diff --git a/build.rs b/build.rs
+index 50733c3..d94e5d4 100644
+--- a/build.rs
++++ b/build.rs
+@@ -1,101 +1,30 @@
+-use std::collections::HashMap;
+-use std::io::Write;
+-use std::path::{Path, PathBuf};
+-use std::{env, fs};
+-
++// EVE Local Station build-only adaptation of upstream revision
++// 5772f9d6238a019b71f0fb235fbeeaf1338694f5, 2026-09-08.
++// Generate the same constants from the pinned YAML-derived mapping without
++// requiring private .env files or full game data during compilation.
++use std::{collections::BTreeMap, env, fs, io::Write, path::PathBuf};
+ use convert_case::{Case, Casing};
+-use serde::Deserialize;
+-
+-type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
+-
+-fn main() -> Result<()> {
+-    dotenvy::dotenv()?;
+ 
++fn main() -> Result<(), Box<dyn std::error::Error>> {
+     #[cfg(feature = "protobuf")]
+     {
+-        build_protobuf()?;
+-    }
+-
+-    load_patch_id()?;
+-
+-    Ok(())
+-}
+-
+-#[cfg(feature = "protobuf")]
+-fn build_protobuf() -> Result<()> {
+-    println!("cargo::rerun-if-changed=efos.proto");
+-    prost_build::Config::new().compile_protos(&["efos.proto"], &["."])?;
+-
+-    Ok(())
+-}
+-
+-#[derive(Debug, Deserialize)]
+-struct GenericNameMapping {
+-    entries: HashMap<i32, NameObj>,
+-}
+-
+-#[derive(Debug, Deserialize)]
+-struct NameObj {
+-    name: String,
+-}
+-
+-fn load_patch_id() -> Result<()> {
+-    let dir = env::var("OUTPUT_DIR")?;
+-    let dir = PathBuf::from(dir).join("json");
+-
+-    let out = env::var("OUT_DIR")?;
+-    let out = PathBuf::from(out);
+-
+-    load_attrs_patches(&dir, &out)?;
+-    load_effects_patches(&dir, &out)?;
+-
+-    Ok(())
+-}
+-
+-fn load_attrs_patches(dir: &Path, out: &Path) -> Result<()> {
+-    let attr_file = dir.join("dogmaAttributes.json");
+-    println!("cargo::rerun-if-changed={}", attr_file.display());
+-
+-    let attrs = fs::File::open(attr_file)?;
+-    let attrs: GenericNameMapping = serde_json::from_reader(attrs)?;
+-    let mut file = fs::File::create(out.join("patch_attrs.rs"))?;
+-    for (k, v) in attrs.entries {
+-        if k >= 0 {
+-            continue;
++        println!("cargo:rerun-if-changed=efos.proto");
++        println!("cargo:rerun-if-env-changed=PROTOC");
++        if env::var_os("PROTOC").is_none() {
++            env::set_var("PROTOC", protoc_bin_vendored::protoc_bin_path()?);
+         }
+-        writeln!(file, "/// Patch item: `{}` - `{}`", k, v.name)?;
+-        writeln!(
+-            file,
+-            "pub const ATTR_{}: i32 = {};\n",
+-            v.name.to_case(Case::Constant),
+-            k
+-        )?;
++        prost_build::Config::new().compile_protos(&["efos.proto"], &["."])?;
+     }
+-    file.sync_data()?;
+-
+-    Ok(())
+-}
+-
+-fn load_effects_patches(dir: &Path, out: &Path) -> Result<()> {
+-    let effect_file = dir.join("dogmaEffects.json");
+-    println!("cargo::rerun-if-changed={}", effect_file.display());
+-
+-    let effects = fs::File::open(effect_file)?;
+-    let effects: GenericNameMapping = serde_json::from_reader(effects)?;
+-    let mut file = fs::File::create(out.join("patch_effects.rs"))?;
+-    for (k, v) in effects.entries {
+-        if k >= 0 {
+-            continue;
++    println!("cargo:rerun-if-changed=patch_ids.json");
++    let mapping: BTreeMap<String, BTreeMap<String, i32>> =
++        serde_json::from_str(&fs::read_to_string("patch_ids.json")?)?;
++    let out = PathBuf::from(env::var("OUT_DIR")?);
++    for (kind, file_name, prefix) in [("attributes", "patch_attrs.rs", "ATTR"), ("effects", "patch_effects.rs", "EFFECT")] {
++        let mut file = fs::File::create(out.join(file_name))?;
++        for (name, id) in &mapping[kind] {
++            assert!(*id < 0, "Patch identifiers must be negative");
++            writeln!(file, "pub const {}_{}: i32 = {};", prefix, name.to_case(Case::Constant), id)?;
+         }
+-        writeln!(file, "/// Patch item: `{}` - `{}`", k, v.name)?;
+-        writeln!(
+-            file,
+-            "pub const EFFECT_{}: i32 = {};\n",
+-            v.name.to_case(Case::Constant),
+-            k
+-        )?;
+     }
+-    file.sync_data()?;
+-
+     Ok(())
+ }
+diff --git a/Cargo.toml b/Cargo.toml
+index d22897e..9c0bdcd 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -2,7 +2,8 @@
+ name = "eve-fit-os"
+ version = "0.1.0"
+ edition = "2021"
+-include = ["src/**/*", "Cargo.toml", "Cargo.lock", "build.rs", "efos.proto"]
++include = ["src/**/*", "Cargo.toml", "build.rs", "efos.proto", "patch_ids.json", "LICENSE-MIT", "LICENSE-APACHE"]
++license = "MIT OR Apache-2.0"
+ 
+ [dependencies]
+ anyhow = "1.0.104"
+@@ -11,7 +12,7 @@ bitflags = "2.13.1"
+ 
+ [build-dependencies]
+ convert_case = "0.11.0"
+-dotenvy = "0.15.7"
++protoc-bin-vendored = { version = "3", optional = true }
+ prost-build = { version = "0.14.4", optional = true }
+ serde = { version = "1.0.229", features = ["derive"] }
+ serde_json = "1.0.151"
+@@ -21,4 +22,4 @@ serde_json = "1.0.151"
+ 
+ [features]
+ default = ["protobuf"]
+-protobuf = ["dep:prost", "dep:prost-build"]
++protobuf = ["dep:prost", "dep:prost-build", "dep:protoc-bin-vendored"]

@@ -1,0 +1,25 @@
+[package]
+name = "eve-fit-os"
+version = "0.1.0"
+edition = "2021"
+include = ["src/**/*", "Cargo.toml", "build.rs", "efos.proto", "patch_ids.json", "LICENSE-MIT", "LICENSE-APACHE"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+anyhow = "1.0.104"
+prost = { version = "0.14.4", optional = true }
+bitflags = "2.13.1"
+
+[build-dependencies]
+convert_case = "0.11.0"
+protoc-bin-vendored = { version = "3", optional = true }
+prost-build = { version = "0.14.4", optional = true }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+[dev-dependencies]
+serde_json = "1.0.151"
+
+[features]
+default = ["protobuf"]
+protobuf = ["dep:prost", "dep:prost-build", "dep:protoc-bin-vendored"]

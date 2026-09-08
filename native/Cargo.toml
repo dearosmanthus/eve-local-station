@@ -1,0 +1,25 @@
+[package]
+name = "eve_local_core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Offline, versioned EVE fitting engine bridge for EVE Local Station"
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[features]
+default = ["engine"]
+engine = ["dep:eve-fit-os"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+eve-fit-os = { path = "vendor/eve-fit-os", optional = true }
+
+[profile.release]
+lto = "thin"
+strip = "debuginfo"
+# Unwind permits the C ABI to turn upstream panics into explicit errors.
+panic = "unwind"

@@ -1,0 +1,141 @@
+syntax = "proto2";
+
+package efos;
+
+message TypeDogma {
+    message TypeDogmaEntry {
+        message DogmaAttributes {
+            required int32 attributeID = 1;
+            required double value = 2;
+        }
+
+        message DogmaEffects {
+            required int32 effectID = 1;
+            required bool isDefault = 2;
+        }
+
+        repeated DogmaAttributes dogmaAttributes = 1;
+        repeated DogmaEffects dogmaEffects = 2;
+    }
+
+    map<int32, TypeDogmaEntry> entries = 1;
+}
+
+message Types {
+    message Type {
+        required int32 groupID = 1;
+        required int32 categoryID = 2;
+
+        optional double capacity = 4;
+        optional double mass = 5;
+        optional double radius = 6;
+        optional double volume = 7;
+    }
+
+    map<int32, Type> entries = 1;
+}
+
+message DogmaAttributes {
+    message DogmaAttribute {
+        required bool published = 1;
+        required double defaultValue = 2;
+        required bool highIsGood = 3;
+        required bool stackable = 4;
+
+        required string name = 5;
+    }
+
+    map<int32, DogmaAttribute> entries = 1;
+}
+
+message DogmaEffects {
+    message DogmaEffect {
+        message ModifierInfo {
+            enum Domain {
+                itemID = 0;
+                shipID = 1;
+                charID = 2;
+                otherID = 3;
+                structureID = 4;
+                target = 5;
+                targetID = 6;
+            }
+
+            enum Func {
+                ItemModifier = 0;
+                LocationGroupModifier = 1;
+                LocationModifier = 2;
+                LocationRequiredSkillModifier = 3;
+                OwnerRequiredSkillModifier = 4;
+                EffectStopper = 5;
+            }
+
+            required Domain domain = 1;
+            required Func func = 2;
+            optional int32 modifiedAttributeID = 3;
+            optional int32 modifyingAttributeID = 4;
+            optional int32 operation = 5;
+            optional int32 groupID = 6;
+            optional int32 skillTypeID = 7;
+        }
+
+        required int32 effectCategory = 1;
+        repeated ModifierInfo modifierInfo = 2;
+
+        required string name = 3;
+    }
+
+    map<int32, DogmaEffect> entries = 1;
+}
+
+message BuffCollections {
+    message Buff {
+        enum AggregateMode {
+            MAXIMUM = 0;
+            MINIMUM = 1;
+        }
+
+        enum ShowOutputValueInUI {
+            SHOW_NORMAL = 0;
+            SHOW_INVERTED = 1;
+            HIDE = 2;
+        }
+
+        enum OperationName {
+            PRE_ASSIGN = 0;
+            PRE_MUL = 1;
+            PRE_DIV = 2;
+            MOD_ADD = 3;
+            MOD_SUB = 4;
+            POST_MUL = 5;
+            POST_DIV = 6;
+            POST_PERCENT = 7;
+            POST_ASSIGN = 8;
+        }
+
+        message ItemModifier {
+            required int32 dogmaAttributeID = 1;
+        }
+
+        message LocationGroupModifier {
+            required int32 dogmaAttributeID = 1;
+            required int32 groupID = 2;
+        }
+
+        message LocationRequiredSkillModifier {
+            required int32 dogmaAttributeID = 1;
+            required int32 skillID = 2;
+        }
+
+        required AggregateMode aggregateMode = 1;
+        required int32 buffID = 2;
+        repeated ItemModifier itemModifiers = 3;
+        repeated LocationGroupModifier locationGroupModifiers = 4;
+        repeated ItemModifier locationModifiers = 5;
+        repeated LocationRequiredSkillModifier locationRequiredSkillModifiers = 6;
+        required OperationName operationName = 7;
+        required ShowOutputValueInUI showOutputValueInUI = 8;
+    }
+
+    map<int32, Buff> entries = 1;
+}

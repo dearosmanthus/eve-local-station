@@ -1,0 +1,170 @@
+[
+  {
+    "name": "async",
+    "files": [
+      "licenses/dart/async/LICENSE"
+    ]
+  },
+  {
+    "name": "boolean_selector",
+    "files": [
+      "licenses/dart/boolean_selector/LICENSE"
+    ]
+  },
+  {
+    "name": "characters",
+    "files": [
+      "licenses/dart/characters/LICENSE"
+    ]
+  },
+  {
+    "name": "clock",
+    "files": [
+      "licenses/dart/clock/LICENSE"
+    ]
+  },
+  {
+    "name": "collection",
+    "files": [
+      "licenses/dart/collection/LICENSE"
+    ]
+  },
+  {
+    "name": "fake_async",
+    "files": [
+      "licenses/dart/fake_async/LICENSE"
+    ]
+  },
+  {
+    "name": "flutter",
+    "files": [
+      "licenses/dart/flutter/LICENSE"
+    ]
+  },
+  {
+    "name": "flutter_lints",
+    "files": [
+      "licenses/dart/flutter_lints/LICENSE"
+    ]
+  },
+  {
+    "name": "flutter_localizations",
+    "files": []
+  },
+  {
+    "name": "flutter_test",
+    "files": []
+  },
+  {
+    "name": "intl",
+    "files": [
+      "licenses/dart/intl/LICENSE"
+    ]
+  },
+  {
+    "name": "leak_tracker",
+    "files": [
+      "licenses/dart/leak_tracker/LICENSE"
+    ]
+  },
+  {
+    "name": "leak_tracker_flutter_testing",
+    "files": [
+      "licenses/dart/leak_tracker_flutter_testing/LICENSE"
+    ]
+  },
+  {
+    "name": "leak_tracker_testing",
+    "files": [
+      "licenses/dart/leak_tracker_testing/LICENSE"
+    ]
+  },
+  {
+    "name": "lints",
+    "files": [
+      "licenses/dart/lints/LICENSE"
+    ]
+  },
+  {
+    "name": "matcher",
+    "files": [
+      "licenses/dart/matcher/LICENSE"
+    ]
+  },
+  {
+    "name": "material_color_utilities",
+    "files": [
+      "licenses/dart/material_color_utilities/LICENSE"
+    ]
+  },
+  {
+    "name": "meta",
+    "files": [
+      "licenses/dart/meta/LICENSE"
+    ]
+  },
+  {
+    "name": "path",
+    "files": [
+      "licenses/dart/path/LICENSE"
+    ]
+  },
+  {
+    "name": "sky_engine",
+    "files": [
+      "licenses/dart/sky_engine/license"
+    ]
+  },
+  {
+    "name": "source_span",
+    "files": [
+      "licenses/dart/source_span/LICENSE"
+    ]
+  },
+  {
+    "name": "stack_trace",
+    "files": [
+      "licenses/dart/stack_trace/LICENSE"
+    ]
+  },
+  {
+    "name": "stream_channel",
+    "files": [
+      "licenses/dart/stream_channel/LICENSE"
+    ]
+  },
+  {
+    "name": "string_scanner",
+    "files": [
+      "licenses/dart/string_scanner/LICENSE"
+    ]
+  },
+  {
+    "name": "term_glyph",
+    "files": [
+      "licenses/dart/term_glyph/LICENSE"
+    ]
+  },
+  {
+    "name": "test_api",
+    "files": [
+      "licenses/dart/test_api/LICENSE"
+    ]
+  },
+  {
+    "name": "vector_math",
+    "files": [
+      "licenses/dart/vector_math/LICENSE"
+    ]
+  },
+  {
+    "name": "vm_service",
+    "files": [
+      "licenses/dart/vm_service/LICENSE"
+    ]
+  },
+  {
+    "name": "eve_local_station",
+    "files": []
+  }
+]
